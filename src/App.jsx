@@ -33,7 +33,7 @@ function App() {
             &nbsp;
             <button
               type="button"
-              class="py-1 px-4 inline-flex items-center gap-x-2 text-xs rounded-md border border-gray-800 text-gray-800 hover:border-gray-500 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-800 dark:text-dark dark:hover:text-gray-300 dark:hover:border-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              class="py-1 px-4 inline-flex items-center gap-x-2 text-xs rounded-md border border-gray-800 text-gray-900 hover:border-gray-700 hover:text-gray-800 disabled:opacity-50 disabled:pointer-events-none"
             >
               Log in
             </button>
