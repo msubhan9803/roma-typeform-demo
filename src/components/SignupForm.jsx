@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
+import OptionsAccordian from "components/OptionsAccordian";
 
 export default function SignupForm() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -62,11 +63,13 @@ export default function SignupForm() {
           </label>
         </div>
 
+        <OptionsAccordian />
+
         <button
           type="submit"
-          className="text-white font-light bg-black rounded-custom-sm text-md w-full sm:w-auto px-5 py-2.5 text-center"
+          className="w-full text-white font-light bg-black rounded-custom-sm text-md px-5 py-2 text-center max-w-[230px] mx-auto"
         >
-          Create my account
+          Create my free account
         </button>
       </form>
     </div>
