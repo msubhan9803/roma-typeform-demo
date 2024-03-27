@@ -1,67 +1,24 @@
 import React from "react";
+import SignupForm from "components/SignupForm";
+import SignUpImage from "assets/images/signup_image.webp";
 
 function App() {
   return (
     <div className="grid grid-cols-12 h-screen">
-      <div className="col-span-5 my-auto">
-        <div className="text-white text-4xl">Sign up and come on in</div>
+      <div className="col-span-5 relative h-screen flex flex-col justify-center">
+        <h1 className="text-white text-4xl text-center mb-9">
+          Sign up <br /> and come on in
+        </h1>
+
+        <img src={SignUpImage} className="w-3/4 mx-auto" alt="signup_image" />
+
+        <span className="text-sm text-white absolute left-1/2 -translate-x-1/2 bottom-12">
+          © Typeform
+        </span>
       </div>
 
-      <div className="col-span-5 my-auto">
-        <form class="max-w-sm mx-auto">
-          <div class="mb-5">
-            <label
-              for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Your email
-            </label>
-            <input
-              type="email"
-              id="email"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="name@flowbite.com"
-              required
-            />
-          </div>
-          <div class="mb-5">
-            <label
-              for="password"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Your password
-            </label>
-            <input
-              type="password"
-              id="password"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              required
-            />
-          </div>
-          <div class="flex items-start mb-5">
-            <div class="flex items-center h-5">
-              <input
-                id="remember"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                required
-              />
-            </div>
-            <label
-              for="remember"
-              class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Remember me
-            </label>
-          </div>
-          <button
-            type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Submit
-          </button>
-        </form>
+      <div className="col-span-7 my-auto bg-white rounded-s-2xl h-screen w-full">
+        <SignupForm />
       </div>
     </div>
   );
