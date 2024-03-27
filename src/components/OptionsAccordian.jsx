@@ -41,7 +41,7 @@ export default function OptionsAccordion() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between text-left text-sm font-medium pl-7 pt-2">
+              <Disclosure.Button className="flex w-full justify-between text-left text-sm font-medium pl-7 py-1">
                 <span className="text-[#191919] font-normal">See options</span>
                 <CgChevronUp
                   className={`${open ? "rotate-180 transform" : ""} h-5 w-5`}

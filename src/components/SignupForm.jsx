@@ -86,13 +86,17 @@ export default function SignupForm() {
           <ErrorMessage message={errors.password.message} showIcon={true} />
         )}
 
-        <div className="flex items-start mb-5">
-          <input
-            id="remember"
-            type="checkbox"
-            {...register("terms")}
-            className={`w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800`}
-          />
+        <div className="flex items-start">
+          <label class="checkbox-container">
+            <input
+              id="remember"
+              type="checkbox"
+              {...register("terms")}
+              className={`w-12 h-12 border border-gray-700 rounded bg-black focus:ring-3 focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-gray-700 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800`}
+            />
+            <span class="checkmark"></span>
+          </label>
+
           <label htmlFor="remember" className="ms-2 text-sm text-black">
             I agree to Typeform’s &nbsp;
             <span className="underline">Terms of Service</span>, &nbsp;
