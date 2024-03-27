@@ -9,7 +9,7 @@ export default function SignupForm() {
   };
 
   return (
-    <div className="flex flex-col justify-center h-full lg:max-w-[542px] mx-auto gap-y-6">
+    <div className="flex flex-col justify-center h-full max-w-64 md:max-w-[542px] mx-auto gap-y-6">
       <TypeFormIcon />
 
       <h1 className=" font-thin text-2xl text-center">

@@ -6,7 +6,7 @@ import SignUpImage from "assets/images/signup_image.webp";
 function App() {
   return (
     <div className="grid grid-cols-12 h-screen">
-      <div className="col-span-5 relative h-screen flex flex-col justify-center ml-14">
+      <div className="hidden col-span-5 relative h-screen lg:flex flex-col justify-center ml-14">
         <h1 className="text-white text-4xl text-center mb-9">
           Sign up <br /> and come on in
         </h1>
@@ -22,7 +22,7 @@ function App() {
         </span>
       </div>
 
-      <div className="col-span-7 my-auto ml-11 bg-white rounded-s-2xl h-screen relative">
+      <div className="col-span-12 lg:col-span-7 my-auto ml-11 bg-white lg:rounded-s-2xl h-screen relative">
         <div className="absolute top-0 flex justify-between items-center w-full px-6 py-2 min-h-[52px]">
           <LanguageDropdown />
 
