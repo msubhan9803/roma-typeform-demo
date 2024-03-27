@@ -13,14 +13,14 @@ export default function SignupForm() {
         <input
           type="email"
           id="email"
-          className="py-3 px-4 block w-full rounded-custom-sm text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 border border-gray-1 hover:border-gray-800 max-h-[38px] placeholder-[#cfcfce]"
+          className="py-3 px-4 block w-full rounded-custom-sm text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 border border-gray-1 hover:border-gray-800 max-h-[38px] placeholder-[#cfcfce] pl-2 max-w-[391px]"
           placeholder="Email"
         />
 
         <input
           type="password"
           id="email"
-          className="py-3 px-4 block w-full rounded-custom-sm text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 border border-gray-1 hover:border-gray-800 max-h-[38px] placeholder-[#cfcfce]"
+          className="py-3 px-4 block w-full rounded-custom-sm text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 border border-gray-1 hover:border-gray-800 max-h-[38px] placeholder-[#cfcfce] pl-2 max-w-[391px]"
           placeholder="Password"
         />
 
