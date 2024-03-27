@@ -22,8 +22,8 @@ function App() {
         </span>
       </div>
 
-      <div className="col-span-12 lg:col-span-7 my-auto ml-11 bg-white lg:rounded-s-2xl h-screen relative">
-        <div className="absolute top-0 flex justify-between items-center w-full px-6 py-2 min-h-[52px]">
+      <div className="col-span-12 lg:col-span-7 my-auto ml-11 bg-white lg:rounded-s-2xl h-screen relative grid grid-rows-3 overflow-y-auto">
+        <div className="flex justify-between items-center w-full px-6 py-2 max-h-[52px] row-span-1">
           <LanguageDropdown />
 
           <div>
@@ -40,7 +40,9 @@ function App() {
           </div>
         </div>
 
-        <SignupForm />
+        <div className="row-span-2">
+          <SignupForm />
+        </div>
       </div>
     </div>
   );
