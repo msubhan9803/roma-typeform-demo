@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 
 export default function SignupForm() {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
+
   return (
     <div className="flex flex-col justify-center h-full lg:max-w-[542px] mx-auto gap-y-6">
       <TypeFormIcon />
@@ -17,12 +24,25 @@ export default function SignupForm() {
           placeholder="Email"
         />
 
-        <input
-          type="password"
-          id="email"
-          className="py-3 px-4 block w-full rounded-custom-sm text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 border border-gray-1 hover:border-gray-800 max-h-[38px] placeholder-[#cfcfce] pl-2 max-w-[391px]"
-          placeholder="Password"
-        />
+        <div className="relative">
+          <input
+            type={isPasswordVisible ? "text" : "password"}
+            id="password"
+            className="py-3 px-4 block w-full rounded-custom-sm text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 border border-gray-1 hover:border-gray-800 max-h-[38px] placeholder-[#cfcfce] pl-2 max-w-[391px]"
+            placeholder="Password"
+          />
+          <button
+            type="button"
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+            onClick={togglePasswordVisibility}
+          >
+            {isPasswordVisible ? (
+              <MdVisibilityOff className="text-stone-300 h-4 w-4" />
+            ) : (
+              <MdVisibility className="text-stone-300 h-4 w-4" />
+            )}
+          </button>
+        </div>
 
         <div className="flex items-start mb-5">
           <div className="flex items-center h-5">
